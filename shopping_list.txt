@@ -1,5 +1,6 @@
 leb x 3
 puter x 5
 kromid x 2
-portokal x 1
-senf x 2
+mandarina x 1
+senf x 3
+celer x 7
