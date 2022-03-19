@@ -1,0 +1,126 @@
+C:\Users\Alek\SI_2022_lab1_206012>git checkout master
+Koристени наредби
+4.git clone - за да го клонирам репозиториум
+Бараните комитови од 5. и 6.
+git add shopping_list.txt за да ја додадам на сцена текстуалната датотека
+git config --global user.email "alek.jarmov@gmail.com" за да се автентицирам
+
+git commit -m "Add 5 items to the shopping list"
+git commit -m "Add quantities to the items."
+7.За правење на гранки
+git checkout -b  branch1 
+git checkout -b branch2
+
+8. Внесете ги досегашните логови во документацијата.
+
+commit 496cb51351289b0aa5a1bf55365f4698122db425 (HEAD -> branch2, master, branch1)
+Author: unknown <alek.jarmov@gmail.com>
+Date:   Sat Mar 19 23:43:30 2022 +0100
+
+    Add quantities to the items.
+
+commit e0da271b696f27e57ccd258a545683ef9bf53156
+Author: unknown <alek.jarmov@gmail.com>
+Date:   Sat Mar 19 23:42:42 2022 +0100
+
+    Add 5 items to the shopping list
+
+commit 23acc84d7b37070a175278b82f5d745bcc372498 (origin/master, origin/HEAD)
+Author: Alek Jarmov <alek.jarmov@gmail.com>
+Date:   Sat Mar 19 23:38:56 2022 +0100
+
+    Update README.md
+
+commit b154e6920460a36e63fd02a579ed186e18f3ed74
+Author: Alek Jarmov <alek.jarmov@gmail.com>
+Date:   Sat Mar 19 23:38:41 2022 +0100
+
+    Initial commit
+
+9.за синхронизација
+git push --set-upstream origin branch1
+git push --set-upstream origin branch2
+git push
+10.git checkout branch1 за да се префрлам на гранката
+11.git commit -m "Change quantity of item #5" 
+12.git checkout master за да се вратам на master
+13.git commit -m "Change quantity of item #2"
+14.git push кај сите 3 гранки
+15.git checkout branch2 
+16.git commit -m "Modify item #4"
+17. Бараните логови:
+commit b3d4191f3ef3e7b28cb3d477e911a3fb910406f9 (HEAD -> branch2)
+Author: unknown <alek.jarmov@gmail.com>
+Date:   Sat Mar 19 23:58:48 2022 +0100
+
+    Modify item #4
+
+commit 496cb51351289b0aa5a1bf55365f4698122db425 (origin/branch2)
+Author: unknown <alek.jarmov@gmail.com>
+Date:   Sat Mar 19 23:43:30 2022 +0100
+
+    Add quantities to the items.
+
+commit e0da271b696f27e57ccd258a545683ef9bf53156
+Author: unknown <alek.jarmov@gmail.com>
+Date:   Sat Mar 19 23:42:42 2022 +0100
+
+    Add 5 items to the shopping list
+
+commit 23acc84d7b37070a175278b82f5d745bcc372498
+Author: Alek Jarmov <alek.jarmov@gmail.com>
+Date:   Sat Mar 19 23:38:56 2022 +0100
+
+    Update README.md
+
+commit b154e6920460a36e63fd02a579ed186e18f3ed74
+Author: Alek Jarmov <alek.jarmov@gmail.com>
+Date:   Sat Mar 19 23:38:41 2022 +0100
+
+    Initial commit
+
+18.git commit --amend
+19.Бараните логови
+commit 61c57a8cc7d83132a41558eb65830e3785955157 (HEAD -> branch2)
+Author: unknown <alek.jarmov@gmail.com>
+Date:   Sat Mar 19 23:58:48 2022 +0100
+
+    Modify item #4 and add item #6
+
+commit 496cb51351289b0aa5a1bf55365f4698122db425 (origin/branch2)
+Author: unknown <alek.jarmov@gmail.com>
+Date:   Sat Mar 19 23:43:30 2022 +0100
+
+    Add quantities to the items.
+
+commit e0da271b696f27e57ccd258a545683ef9bf53156
+Author: unknown <alek.jarmov@gmail.com>
+Date:   Sat Mar 19 23:42:42 2022 +0100
+
+    Add 5 items to the shopping list
+
+commit 23acc84d7b37070a175278b82f5d745bcc372498
+Author: Alek Jarmov <alek.jarmov@gmail.com>
+Date:   Sat Mar 19 23:38:56 2022 +0100
+
+    Update README.md
+
+commit b154e6920460a36e63fd02a579ed186e18f3ed74
+Author: Alek Jarmov <alek.jarmov@gmail.com>
+Date:   Sat Mar 19 23:38:41 2022 +0100
+
+    Initial commit
+
+
+
+20.checkout master па 
+git merge branch1
+при овој merge не се јавува конфликт се направи auto-merge
+се користеше стратегијата 'ort' за спојувањето на гранките
+21.Се појави конфликт при git merge branch2 го решив така што 
+ја искористив функцијата git merge --strategy-option=theirs branch2
+со што ги ovveridneav промените на master so промените од branch2 односно во
+конфликтната ситуација се прифаќаат промените на branch2 
+22.git add и git commit
+23.git push
+
