@@ -1,5 +1,5 @@
 leb x 3
-puter x 4
+puter x 5
 kromid x 2
 portokal x 1
 senf x 3
