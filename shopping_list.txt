@@ -1,5 +1,5 @@
-leb
-puter 
-kromid
-portokal
-senf
+leb x 3
+puter x 4
+kromid x 2
+portokal x 1
+senf x 3
